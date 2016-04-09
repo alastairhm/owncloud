@@ -8,7 +8,7 @@
    - MYSQL_DATABASE=owncloud
    - MYSQL_USER=owncloud
    - MYSQL_PASSWORD=password
- ghost:
+ owncloud:
   image: owncloud:8.1
   container_name: owncloud
   links:
