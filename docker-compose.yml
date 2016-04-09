@@ -1,0 +1,19 @@
+ mysql:
+  image: mysql
+  container_name: mysql
+  ports:
+   - "3306"
+  environment:
+   - MYSQL_ROOT_PASSWORD=root
+   - MYSQL_DATABASE=owncloud
+   - MYSQL_USER=owncloud
+   - MYSQL_PASSWORD=password
+ ghost:
+  image: owncloud:8.1
+  container_name: owncloud
+  links:
+   - mysql
+  ports:
+    - "80:80"
+  volumes:
+    - /var/www/owncloud:/var/www/html
