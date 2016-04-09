@@ -6,7 +6,8 @@ Just a quick test getting ownCloud to run on Docker
 Owncloud Docker information : https://hub.docker.com/r/library/owncloud/
 mySQL Docker information : https://hub.docker.com/_/mysql/
 
-## Setup the database connection as follows (as setup in the compose file);
+## Setup the database connection
+Enter details as follows (as setup in the compose file);
 
 Choose MySQL/MariaDB
 Database user : owncloud
