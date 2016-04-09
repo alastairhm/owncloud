@@ -17,3 +17,10 @@ Enter details as follows (as setup in the compose file);
 
 ## Local Volume
 Create a local directory for your ownCloud files /var/www/owncloud
+
+## Running
+Clone the repo then run the following in the directory
+
+docker-compose -d up
+
+then browse to http://localhost/
