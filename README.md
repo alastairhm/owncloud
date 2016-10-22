@@ -23,7 +23,10 @@ Create a local directory for your ownCloud files /var/www/owncloud
 ## Running
 Clone the repo then run the following in the directory
 
+###Run in foreground
 docker-compose -d up
+###Run in backgroud
+docker-compose start 
 
 then browse to http://owncloud.localhost/
 
