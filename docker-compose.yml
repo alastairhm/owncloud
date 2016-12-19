@@ -1,5 +1,5 @@
  mysql:
-  image: mysql
+  image: mysql:8.0
   container_name: mysql_owncloud
   ports:
    - "3306"
@@ -9,7 +9,7 @@
    - MYSQL_USER=owncloud
    - MYSQL_PASSWORD=password
  hosts:
-  image: jwilder/nginx-proxy
+  image: jwilder/nginx-proxy:0.5.0
   container_name: nginx-proxy
   ports:
    - 80:80
